@@ -1,0 +1,32 @@
+include head.pug
+main
+	section.perfil
+		img( width="100px" class="perfil__avatar" src="../images/SELECTTIVO-LOGO-White.png")
+		h2.perfil__nombre Selecttivo
+		h3.perfil__titulo Tienda virtual
+		a(href="https://www.instagram.com/selecttivo/" target="_blank" class="perfil__boton") Seguir
+		.estadistica--perfil
+			+stats("134", "Seguidores")
+			+stats("1", "Siguiendo")
+			+stats("13", "Publicaciones")
+		.perfil__minibio
+			h2 Acerca de nosotros
+			h3 Tienda virtial de ropa y accesorios de hombres y mujeres
+		.ubicacion--perfil
+			i.fas.fa-map-marker-alt
+			h2 Venezuela
+			h3 Caracas
+		.galeria
+			h2 Adelantos
+			.galeria__foto-principal: img(src="../images/Bolso-baguette-verde.png" width= "125")
+			.galeria__fotos-adicionales
+				img(class="zoom" src="../images/Bolso-baguette-negro.png" width= "70px")
+				img(class="zoom" src="../images/Cartera-balon-blanca.png" width= "70px")
+				img(class="zoom" src="../images/cartera-balon-rosada.jpg" width= "70px")
+				img(class="zoom" src="../images/bandolero.png" width= "70px")
+	aside.articulos
+		+article("Proximos estrenos", "Bolsos Baguette","En los próximos días se estrenarán los Bolsos baguette, y con ellos se abre un periodo de productos nuevos y más actividad en redes sociales.")
+		+article("", "Carteras de basketball","Las carteras de Basketball, uno de nuestros Best Seller contará con un nuevo restock, estará disponible próximamente junto con dos nuevos colores, blanco y rosado. Un restock con piezas limitadas y para las más amantes del deporte o la moda.")
+		+article("", "Bandolero de hombre y Reels","El bolso bandolero de hombre es un nuevo accesorio selectivo, viene abriendo paso a nuevos accesorios masculinos. Nuevos Reels, nuevas ideas, nuevos outfit's, hacen parte de ésta etapa de Selecttivo.")
+
+		
